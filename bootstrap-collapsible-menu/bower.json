@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-side-menu",
+  "authors": [
+    "Ashutosh Nayak <ashugodhoom@gmail.com>"
+  ],
+  "description": "Sliding Responsive Side Menu using Bootstrap",
+  "main": "index.html",
+  "keywords": [
+    "bootstrap",
+    "side-menu",
+    "sliding-menu",
+    "responsive"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-slide-side-menu",
+  "version": "1.0.0",
+  "description": "Slide Side Menu using Bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "slide-side-menu",
+    "responsive"
+  ],
+  "author": "nayakashu",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}

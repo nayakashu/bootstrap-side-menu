@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Collapsible Menu</title>
+
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="main-navbar" class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <span id="hamburger" class="navbar-brand">
+                    <a href="#" onclick="openSideMenu()">
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <a class="navbar-brand" href="#">AdminStrap</a>
+            </div>
+            <ul id="navbar-menu" class="nav navbar-nav">
+                <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Users</a></li>
+                <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+                <li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> Profile</a></li>
+            </ul>
+            <ul id="navbar-profile" class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ashutosh
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> Profile</a></li>
+                        <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i> Stats</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side Menu -->
+    <div id="side-menu" class="side-nav">
+        <div class="btn-close" onclick="closeSideMenu()"><i class="fa fa-times" aria-hidden="true"></i></div>
+        <a href="#" class="active" onmouseover="resetPadding(this)"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a href="#" onmouseover="resetPadding(this)"><i class="fa fa-user-o" aria-hidden="true"></i> Users</a>
+        <a href="#" onmouseover="resetPadding(this)"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
+        <a href="#" onmouseover="resetPadding(this)"><i class="fa fa-user-circle" aria-hidden="true"></i> Profile</a>
+        <li role="separator" class="side-menu-divider"></li>
+        <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+    </div>
+
+    <!-- Main Area -->
+    <div id="main-area" class="container">
+        <h1>Responsive Side Menu</h1>
+    </div>
+
+    <!-- Scripts at the end of the document so that page loads faster -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
